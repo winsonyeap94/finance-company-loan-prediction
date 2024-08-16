@@ -1,0 +1,20 @@
+train_dataset:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/train_ctrUa4K.csv
+
+test_dataset:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/test_lAUu6dG.csv
+
+preprocessed_train_dataset:
+  type: pandas.FeatherDataset
+  filepath: data/02_intermediate/preprocessed_train_dataset.feather
+
+preprocessed_test_dataset:
+  type: pandas.FeatherDataset
+  filepath: data/02_intermediate/preprocessed_test_dataset.feather
+
+knn_imputer:
+  type: pickle.PickleDataset
+  filepath: data/06_models/knn_imputer.pkl
+
